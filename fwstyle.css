@@ -2,7 +2,3 @@
 :root {
   --gradient: linear-gradient(140deg, #daf2f2, #dadaf2, #efdaf2);
 }
-
-.list {
-  background-image: var(--gradient);
-}
