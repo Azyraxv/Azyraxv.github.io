@@ -1,8 +1,57 @@
-/* CODE FOR AZYRAX.COM BY AZYRAX. */
+/*======================================================================
+  WEBSITE CSS FOR AZYRAX.COM BY AZYRAX. DO NOT USE WITHOUT PERMISSION.
+======================================================================*/
 :root {
-  --gradient: linear-gradient(140deg, #daf2f2, #dadaf2, #efdaf2);
+  --azyrax-gradient: linear-gradient(140deg, #daf2f2, #dadaf2, #efdaf2);
 }
 
-footer {
-  background-image: var(--gradient);
+h1 {
+font-size: 2rem;
+}
+h2 {
+font-size: 1.5rem;
+}
+h3 {
+font-size: 1.17rem;
+}
+h4 {
+font-size: 1rem;
+}
+h5 {
+font-size: 0.83rem;
+}
+h6 {
+font-size: 0.67rem;
+}
+/*======================================================================
+  ANNOUNCEMENT BAR AND HEADER CUSTOMIZATIONS
+======================================================================*/
+.announcement-bar {
+  background-image: var(--azyrax-gradient);
+  color: var(--color-on-primary);
+  font-family: var(--font-family-base);
+  font-size: 0.875rem;
+  text-transform: none;
+  padding: 8px;
+  border-bottom: 0px;
+}
+
+.header__grid {
+  padding: 16px 0px;
+}
+
+.header__logo-image {
+  padding: 0px !important;
+}
+
+.header__nav {
+  padding: 0px !important;
+  margin-top: 16px;
+}
+
+.header__link {
+  padding: 0px 16px;
+}
+.header__link--icon {
+  line-height: 1.2;
 }
