@@ -5,6 +5,18 @@
   --azyrax-gradient: linear-gradient(140deg, #daf2f2, #dadaf2, #efdaf2);
 }
 
+* {
+  scrollbar-width: thin;
+}
+.html-formatter > * + * {
+  margin-top: 14px;
+}
+
+p, .rich-text__text {
+  font-size: 0.875rem;
+  letter-spacing: 0.01rem;
+}
+
 h1 {
 font-size: 2rem;
 }
@@ -35,6 +47,12 @@ font-size: 0.67rem;
   padding: 8px;
   border-bottom: 0px;
 }
+.announcement-bar__inner {
+  padding: 0px;
+}
+.announcement-bar__label {
+  font-weight: 400;
+}
 
 .header__grid {
   padding: 16px 0px;
@@ -51,7 +69,68 @@ font-size: 0.67rem;
 
 .header__link {
   padding: 0px 16px;
+  letter-spacing: 0.05rem;
 }
 .header__link--icon {
   line-height: 1.2;
+}
+
+/*======================================================================
+  MEMBERSHIP AREA CUSTOMIZATIONS
+======================================================================*/
+.button-outline {
+  border-radius: 0px;
+}
+
+/*======================================================================
+  FOOTER CUSTOMIZATIONS
+======================================================================*/
+
+/* Hide original footer */
+.footer__inner {
+display: none !important;
+}
+.footer__line {
+  border-top: 0px !important;
+}
+
+/* Custom footer: 4-column info */
+.footer-row4-container {
+  background-image: var(--gradient);
+  width: 100%;
+}
+.footer-row4 {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 0px 48px;
+}
+
+.footer-column4 {
+  display: flex;
+  width: 25%;
+  padding: 16px 8px;
+  color: var(--color-background);
+  text-align: left;
+  justify-content: center;
+}
+
+@media screen and (max width: 640px;) {
+  .footer-row4 {
+    display: grid;
+    width: 100%;
+  }
+  .footer-column4 {
+    width: 100%;
+  }
+}
+
+.footer-column4 p, .footer-column4 b, .footer-column4 a {
+  color: var(--color-background);
+  font-size: 0.875rem;
+}
+
+.row4svg {
+  margin-right: 16px;
+  fill: var(--color-background);
 }
